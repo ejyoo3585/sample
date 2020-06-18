@@ -46,11 +46,18 @@ Role kRolesMap[] = {
   { @selector(performZoom:), "zoom" },
   { @selector(terminate:), "quit" },
   { @selector(toggleFullScreen:), "togglefullscreen" },
-};
-123
+}  // namespace
 
-2423
-{}
-12333
+@implementation AtomMenuController
 
+@synthesize model = model_;
+
+- (id)initWithModel:(atom::AtomMenuModel*)model useDefaultAccelerator:(BOOL)use {
+  if ((self = [super init])) {
+    model_ = model;
+    isMenuOpen_ = NO;
+    useDefaultAccelerator_ = use;
+    [self menu];
+  }
+  return self;
 }
