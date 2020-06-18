@@ -25,6 +25,30 @@ struct Role {
   SEL selector;
   const char* role;
 };
+Role kRolesMap[] = {
+  { @selector(orderFrontStandardAboutPanel:), "about" },
+  { @selector(hide:), "hide" },
+  { @selector(hideOtherApplications:), "hideothers" },
+  { @selector(unhideAllApplications:), "unhide" },
+  { @selector(arrangeInFront:), "front" },
+  { @selector(undo:), "undo" },
+  { @selector(redo:), "redo" },
+  { @selector(cut:), "cut" },
+  { @selector(copy:), "copy" },
+  { @selector(paste:), "paste" },
+  { @selector(delete:), "delete" },
+  { @selector(pasteAndMatchStyle:), "pasteandmatchstyle" },
+  { @selector(selectAll:), "selectall" },
+  { @selector(startSpeaking:), "startspeaking" },
+  { @selector(stopSpeaking:), "stopspeaking" },
+  { @selector(performMiniaturize:), "minimize" },
+  { @selector(performClose:), "close" },
+  { @selector(performZoom:), "zoom" },
+  { @selector(terminate:), "quit" },
+  { @selector(toggleFullScreen:), "togglefullscreen" },
+};
+
+{}
 
 
 }
