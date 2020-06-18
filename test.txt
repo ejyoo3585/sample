@@ -15,3 +15,16 @@
 #include "content/public/browser/browser_thread.h"
 #include "ui/events/cocoa/cocoa_event_utils.h"
 #include "ui/gfx/image/image.h"
+
+
+using content::BrowserThread;
+
+namespace {
+
+struct Role {
+  SEL selector;
+  const char* role;
+};
+
+
+}
