@@ -61,3 +61,14 @@ Role kRolesMap[] = {
   }
   return self;
 }
+
+- (void)dealloc {
+  [menu_ setDelegate:nil];
+
+  // Close the menu if it is still open. This could happen if a tab gets closed
+  // while its context menu is still open.
+  [self cancel];
+
+  model_ = NULL;
+  [super dealloc];
+}
