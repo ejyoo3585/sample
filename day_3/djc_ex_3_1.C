@@ -3,6 +3,9 @@
 
 int binsearchA(int x, int v[], int n);
 int binsearchB(int x, int v[], int n);
+int binsearchC(int x, int v[], int n);
+int binsearchD(int x, int v[], int n);
+
 
 int main(void) {
 

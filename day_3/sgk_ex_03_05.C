@@ -6,6 +6,7 @@
 #include <ctype.h>
 
 #define MAX_BYTES 256
+#define MIN_BYTES 256
 
 /* Exercise 3-5: Write a function itob(n,s,b) that converts the interger n into a base b character representation in the string s. In particular, itob(n,s,16) formats nas a hexadecimal integer in s.*/
 
