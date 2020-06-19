@@ -6,6 +6,7 @@ int main() {
     b = 0;
     t = 0;
     nl = 0;
+    total = 0;
 
     while ( (c = getchar()) != EOF) {
         if(c == ' '){

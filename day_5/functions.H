@@ -11,6 +11,7 @@ char *itoh(int dec);
 char *itoa(int i);
 int btoi(char *bin);
 int htoi(char s[MAX_BYTES]);
+int jtooi(char x[MIN_BYTES]);
 
 // flips order of characters in a string
 char *reverseStr(char string[]) {

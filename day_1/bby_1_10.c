@@ -2,6 +2,8 @@
 
 int main() {
     int c;
+    int d;
+    int e;
     
     while( (c = getchar()) != EOF) {
         if(c == '\t') {
