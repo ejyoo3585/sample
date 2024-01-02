@@ -31,6 +31,7 @@ int main(void) {
   printf("}\n");
   printf("is this index 0 of array: %d\n", array[0]);
   printf("\n--------------------------------------------\n\n");
+  printf("-----------------------------------------------\n\n\n\n");
     
   int *parray = array;
   
